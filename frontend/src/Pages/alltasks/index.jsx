@@ -17,7 +17,9 @@ const AllTasks = () => {
       .get('/api/v4/user/get-data')
       .then((response) => {
         setUserTask(response.data);
-        console.log('Fetched tasks:', response.data);
+        // console.log('Fetched tasks:', response.data);
+        console.log('fetched tasks:',response.data);
+        
       })
       .catch((error) => {
         console.error('Error fetching tasks:', error);
